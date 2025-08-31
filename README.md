@@ -1,8 +1,6 @@
 # AquaBean — Simple daily water tracker
 
-<p align="center">
-  <img src="assets/aquabean-icon-1024.png" alt="AquaBean icon" width="120">
-</p>
+
 
 Keep your hydration on track with one‑tap logging, a clean hydration ring, gentle reminders, and streaks — designed to be private by default.
 
