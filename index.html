@@ -3,10 +3,11 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AquaBean — Simple daily water tracker</title>
 <meta name="description" content="AquaBean is a simple daily water tracker for iPhone. One‑tap logging, hydration ring, streaks, and smart reminders.">
-<link rel="icon" href="/assets/aquabean-icon-1024.png">
+<link rel="icon" href="assets/aquabean-icon-1024.png">
+<link rel="apple-touch-icon" href="assets/aquabean-icon-1024.png">
 <meta property="og:title" content="AquaBean — Simple daily water tracker">
 <meta property="og:description" content="One‑tap logging, hydration ring, streaks, and smart reminders.">
-<meta property="og:image" content="/assets/aquabean-icon-1024.png">
+<meta property="og:image" content="assets/aquabean-icon-1024.png">
 <style>
 :root{--bg:#07090c;--card:#101317;--text:#eaf0f7;--muted:#9fb1c6;--brand:#2da8ff}
 *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
@@ -30,10 +31,10 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
 ul{margin:8px 0 8px 18px}
 </style>
 <body>
-<div class="nav"><a href="/index.html">Home</a><a href="/support.html">Support</a><a href="/privacy.html">Privacy</a></div>
+<div class="nav"><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
 <div class="container">
   <div class="hero card">
-    <img src="/assets/aquabean-icon-1024.png" alt="AquaBean icon">
+    <img src="assets/aquabean-icon-1024.png" alt="AquaBean icon">
     <div>
       <h1 style="margin:0;font-size:34px;">AquaBean</h1>
       <div class="h3">Simple daily water tracker</div>
@@ -57,12 +58,21 @@ ul{margin:8px 0 8px 18px}
   </div>
   <div class="section card">
     <h2 class="h2">Screenshots</h2>
-    <p class="small">Add screenshots from the app here (Today, History, Settings).</p>
-    <ul class="small">
-      <li>Upload images to <span class="kbd">/assets</span> (e.g. <span class="kbd">today.png</span>, <span class="kbd">history.png</span>, <span class="kbd">settings.png</span>).</li>
-      <li>Replace this note with <code>&lt;img src="/assets/today.png" ...&gt;</code> tags.</li>
-    </ul>
+    <div class="grid" style="align-items:start;">
+      <div>
+        <img src="assets/screenshot-today.png" alt="Today view" style="width:100%;max-width:320px;border-radius:16px;border:1px solid #1a1f26;box-shadow:0 10px 30px rgba(0,0,0,.35)" onerror="this.parentElement.querySelector('p').style.display='block';this.style.display='none'">
+        <p class="small" style="display:none;margin-top:6px;">Add <span class="kbd">assets/screenshot-today.png</span></p>
+      </div>
+      <div>
+        <img src="assets/screenshot-history.png" alt="History view" style="width:100%;max-width:320px;border-radius:16px;border:1px solid #1a1f26;box-shadow:0 10px 30px rgba(0,0,0,.35)" onerror="this.parentElement.querySelector('p').style.display='block';this.style.display='none'">
+        <p class="small" style="display:none;margin-top:6px;">Add <span class="kbd">assets/screenshot-history.png</span></p>
+      </div>
+      <div>
+        <img src="assets/screenshot-settings.png" alt="Settings view" style="width:100%;max-width:320px;border-radius:16px;border:1px solid #1a1f26;box-shadow:0 10px 30px rgba(0,0,0,.35)" onerror="this.parentElement.querySelector('p').style.display='block';this.style.display='none'">
+        <p class="small" style="display:none;margin-top:6px;">Add <span class="kbd">assets/screenshot-settings.png</span></p>
+      </div>
+    </div>
   </div>
 </div>
-<div class="footer small">© 2025 Kalyan Viswanath · AquaBean · <a href="/privacy.html">Privacy</a> · <a href="/support.html">Support</a></div>
+<div class="footer small">© 2025 Kalyan Viswanath · AquaBean · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></div>
 </body></html>
