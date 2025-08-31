@@ -7,7 +7,7 @@
 :root{--bg:#07090c;--card:#101317;--text:#eaf0f7;--muted:#9fb1c6;--brand:#2da8ff}
 *{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
 a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
-.container{max-width:860px;margin:0 auto;padding:24px}
+.container{max-width:980px;margin:0 auto;padding:24px}
 .card{background:var(--card);border:1px solid #1a1f26;border-radius:16px;padding:18px}
 .nav{display:flex;gap:18px;align-items:center;justify-content:flex-end;padding:16px 24px;border-bottom:1px solid #1a1f26}
 .nav a{color:var(--muted)}
@@ -16,6 +16,12 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
 /* FAQ styles for clearer Q/A contrast */
 .faq-q{color:var(--brand);font-weight:600}
 .faq-a{color:#b5d7ff}
+</style>
+<style>
+@media (max-width: 640px) {
+  .container{padding:16px}
+  .nav{justify-content:center;padding:12px 16px}
+}
 </style>
 <body>
 <div class="nav"><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
