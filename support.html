@@ -13,6 +13,9 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
 .nav a{color:var(--muted)}
 .footer{padding:24px;border-top:1px solid #1a1f26;text-align:center;color:var(--muted)}
 .small{font-size:13px;color:var(--muted)}
+/* FAQ styles for clearer Q/A contrast */
+.faq-q{color:var(--brand);font-weight:600}
+.faq-a{color:#b5d7ff}
 </style>
 <body>
 <div class="nav"><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
@@ -20,14 +23,13 @@ a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
   <h1>Support</h1>
   <div class="card">
     <h2>FAQs</h2>
-    <p><strong>How do I change my daily goal?</strong><br>Open AquaBean → Settings → Daily Goal.</p>
-    <p><strong>How do I switch units?</strong><br>Settings → Units (ml/oz).</p>
-    <p><strong>I’m not receiving reminders.</strong><br>Ensure notifications are allowed for AquaBean in iOS Settings and that “Enable Nudges” is ON in the app.</p>
-    <p><strong>Does AquaBean sync data?</strong><br>Current version stores data locally on your device. Sync may come in a future build.</p>
+    <p><span class="faq-q">How do I change my daily goal?</span><br><span class="faq-a">Open AquaBean → Settings → Daily Goal.</span></p>
+    <p><span class="faq-q">How do I switch units?</span><br><span class="faq-a">Settings → Units (ml/oz).</span></p>
+    <p><span class="faq-q">I’m not receiving reminders.</span><br><span class="faq-a">Ensure notifications are allowed for AquaBean in iOS Settings and that “Enable Nudges” is ON in the app.</span></p>
+    <p><span class="faq-q">Does AquaBean sync data?</span><br><span class="faq-a">Current version stores data locally on your device. Sync may come in a future build.</span></p>
   </div>
   <div class="card" style="margin-top:16px;">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:hello@kstack.dev">hello@kstack.dev</a></p>
     <p>GitHub Issues: <a href="https://github.com/kalyanviswanath/AquaBean/issues">AquaBean Issues</a></p>
   </div>
   <p class="small" style="margin-top:16px;">See our <a href="privacy.html">Privacy Policy</a>.</p>
