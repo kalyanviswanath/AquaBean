@@ -1,5 +1,9 @@
 # AquaBean — Simple daily water tracker
 
+<p align="center">
+  <img src="assets/aquabean-icon-1024.png" alt="AquaBean icon" width="120">
+</p>
+
 Keep your hydration on track with one‑tap logging, a clean hydration ring, gentle reminders, and streaks — designed to be private by default.
 
 - Live site: https://kalyanviswanath.github.io/AquaBean/
@@ -21,7 +25,6 @@ Keep your hydration on track with one‑tap logging, a clean hydration ring, gen
 Read the policy: https://kalyanviswanath.github.io/AquaBean/privacy.html
 
 ## Project status
-This repository hosts the landing site for AquaBean. The iOS app is in active development; App Store link will be added when available.
 
 I’m Kalyan Viswanath, a System Engineer who enjoys building things hands-on. AquaBean is my very first iOS app — a small project I created to explore app development and turn a simple idea into something useful.
 
