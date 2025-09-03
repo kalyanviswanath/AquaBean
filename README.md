@@ -5,7 +5,7 @@
 Keep your hydration on track with one‑tap logging, a clean hydration ring, gentle reminders, and streaks — designed to be private by default.
 
 - Live site: https://kalyanviswanath.github.io/AquaBean/
-- App Store: Coming soon
+- App Store: https://apps.apple.com/ca/app/aquabean/id6751782809
 
 ## Features
 - One‑tap logging: Quickly add common amounts (250/350/500 ml) or customize.
