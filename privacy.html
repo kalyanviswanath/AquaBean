@@ -1,44 +1,308 @@
-<!doctype html><html lang="en">
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AquaBean Privacy Policy</title>
+<meta name="description" content="AquaBean Privacy Policy - Learn how we protect your data and privacy in our simple daily water tracker app.">
 <link rel="icon" href="assets/aquabean-icon-1024.png">
 <link rel="apple-touch-icon" href="assets/aquabean-icon-1024.png">
 <style>
-:root{--bg:#07090c;--card:#101317;--text:#eaf0f7;--muted:#9fb1c6;--brand:#2da8ff}
-*{box-sizing:border-box}html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
-a{color:var(--brand);text-decoration:none}a:hover{text-decoration:underline}
-.container{max-width:980px;margin:0 auto;padding:24px}
-.card{background:var(--card);border:1px solid #1a1f26;border-radius:16px;padding:18px}
-.nav{display:flex;gap:18px;align-items:center;justify-content:flex-end;padding:16px 24px;border-bottom:1px solid #1a1f26}
-.nav a{color:var(--muted)}
-.footer{padding:24px;border-top:1px solid #1a1f26;text-align:center;color:var(--muted)}
- .small{font-size:13px;color:var(--muted)}
- /* Subheadings in privacy for a bit more contrast */
- .card h2{color:var(--brand)}
+:root {
+  --bg: #0a0e14;
+  --bg-gradient: linear-gradient(135deg, #0a0e14 0%, #1a1f26 100%);
+  --card: #11161d;
+  --card-hover: #1a2029;
+  --text: #f0f4f8;
+  --text-muted: #a8b3c0;
+  --brand: #3b82f6;
+  --brand-hover: #2563eb;
+  --accent: #06b6d4;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --border: #1e293b;
+  --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--brand-hover);
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+  background: rgba(10, 14, 20, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav a {
+  color: var(--text-muted);
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.nav a:hover {
+  color: var(--text);
+  background: rgba(59, 130, 246, 0.1);
+  text-decoration: none;
+}
+
+.nav a.active {
+  color: var(--brand);
+  background: rgba(59, 130, 246, 0.1);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 32px;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+  margin: 24px 0;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 40px 0 16px;
+  background: linear-gradient(135deg, var(--text) 0%, var(--brand) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 28px;
+  margin: 32px 0 16px;
+  font-weight: 700;
+  color: var(--brand);
+  letter-spacing: -0.01em;
+}
+
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 80px;
+  background: rgba(10, 14, 20, 0.5);
+}
+
+.small {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.emphasis {
+  color: var(--success);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+ul {
+  margin: 16px 0 16px 24px;
+  color: var(--text-muted);
+}
+
+li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card, h1 {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus states for accessibility */
+a:focus {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand);
+}
 </style>
 <style>
-@media (max-width: 640px) {
-  .container{padding:16px}
-  .nav{justify-content:center;padding:12px 16px}
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .nav {
+    justify-content: center;
+    padding: 16px 0;
+    gap: 24px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin: 32px 0 16px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin: 24px 0 12px;
+  }
+  
+  .card {
+    padding: 24px;
+    margin: 20px 0;
+  }
+  
+  .emphasis {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+  }
 }
 </style>
 <body>
-<div class="nav"><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></div>
+<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="support.html">Support</a>
+  <a href="privacy.html" class="active">Privacy</a>
+</div>
 <div class="container">
-  <h1>AquaBean Privacy Policy</h1>
-  <p><em>Effective: 31 Aug 2025</em></p>
+  <h1>Privacy Policy</h1>
+  <p style="color: var(--text-muted); font-size: 18px; margin-bottom: 32px;"><em>Effective: 31 Aug 2025</em></p>
+  
   <div class="card">
-    <p>AquaBean is a simple daily water tracker. We designed it to be private by default.</p>
+    <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding: 20px; background: rgba(16, 185, 129, 0.1); border-radius: 16px; border: 1px solid rgba(16, 185, 129, 0.2);">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" style="color: var(--success);">
+        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+      </svg>
+      <div>
+        <h3 style="margin: 0 0 8px; color: var(--success); font-size: 20px; font-weight: 700;">Privacy by Design</h3>
+        <p style="margin: 0; color: var(--text-muted);">AquaBean is a simple daily water tracker designed to be private by default.</p>
+      </div>
+    </div>
+    
     <h2>Data We Collect</h2>
-    <p><strong>None.</strong> AquaBean does not collect, transmit, sell, or share any personal data. Your hydration entries and settings remain on your device.</p>
+    <p style="font-size: 18px; margin-bottom: 16px;"><span class="emphasis">None.</span></p>
+    <p>AquaBean does not collect, transmit, sell, or share any personal data. Your hydration entries and settings remain securely on your device.</p>
+    
     <h2>Third‑Party Services</h2>
     <p>AquaBean does not use analytics, advertising SDKs, or external databases. If in a future version you opt into features like iCloud sync or Health integration, those will be clearly explained and optional.</p>
+    
     <h2>Permissions</h2>
-    <ul><li><strong>Notifications (optional):</strong> for hydration reminders you enable. Notification content is generated locally.</li></ul>
+    <ul>
+      <li><strong>Notifications (optional):</strong> for hydration reminders you enable. Notification content is generated locally on your device.</li>
+    </ul>
+    
+    <h2>Data Security</h2>
+    <p>All your data is stored locally on your device using iOS's secure storage mechanisms. We don't have access to your personal information, and it never leaves your device unless you explicitly choose to share it.</p>
+    
     <h2>Contact</h2>
-    <p>Questions? Open an issue on <a href="https://github.com/kalyanviswanath/AquaBean/issues">GitHub</a>.</p>
+    <p>Questions about this privacy policy? Open an issue on <a href="https://github.com/kalyanviswanath/AquaBean/issues" style="font-weight: 600;">GitHub</a>.</p>
   </div>
-  <p class="small" style="margin-top:16px;">Need help? Visit <a href="support.html">Support</a>.</p>
+  
+  <p class="small" style="margin-top: 32px; text-align: center;">
+    Need help? Visit our <a href="support.html">Support page</a>.
+  </p>
 </div>
-<div class="footer small">© 2025 Kalyan Viswanath · AquaBean · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></div>
+<div class="footer small">
+  <div style="margin-bottom: 16px;">
+    <p style="margin: 0; font-size: 16px; color: var(--text);">© 2025 Kalyan Viswanath · AquaBean</p>
+  </div>
+  <div style="display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;">
+    <a href="privacy.html" style="color: var(--text-muted); transition: color 0.2s ease;">Privacy</a>
+    <a href="support.html" style="color: var(--text-muted); transition: color 0.2s ease;">Support</a>
+    <a href="https://github.com/kalyanviswanath/AquaBean" style="color: var(--text-muted); transition: color 0.2s ease;">GitHub</a>
+  </div>
+</div>
 </body></html>
